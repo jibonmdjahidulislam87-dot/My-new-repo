@@ -3,15 +3,13 @@ img{
   height: 150px;
   object-fit: contain;
   object-position: center;
-  border: 10px; 
-  border-color: #556b2f;
   
 }
 .nav-links{
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 70px;  
+  gap: 80px;  
   margin-bottom: 30px;
 
 }
@@ -26,10 +24,10 @@ img{
 
 }
 .nav-action{
-  display: flex;
-  align-self: flex-start;
-  gap: 80px;
-  position: absolute ;
+position: relative;
+left: 40px;
+
+
 
 }
 .hero-section{
@@ -94,18 +92,17 @@ p2{
 .section-two{
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 110px;
 
 }
 
-.coastal-escape {
+.Banners {
   display: flex;
   flex-direction: column;
   align-items: center; 
-        
   text-align: center; 
  }
-.coastal-escape .p1{
+.Banners .p1{
   width: 332px;
   height: 84px;
   background-color: #556b2f;
@@ -119,20 +116,20 @@ p2{
   margin-top: 80px;
   
 }
-.coastal-escape .sainmartin-pt{
+.Banners .photo{
   width: 358px;
   height: 373px;
   border-radius: 37px;
   object-fit: cover;
   
 }
-.coastal-escape .p2{
+.Banners .p2{
   font-size: 32px;
   font-weight: bold;
   margin-top: 10px;
   padding: 0;
 }
-.coastal-escape .p3{
+.Banners .p3{
   font-size: 15px;
   font-family: Inria Sans;
   font-style: Italic;
@@ -140,98 +137,138 @@ p2{
 }
 
 
+/*here is the design for detail page 1*/
 
 
 
 
 
 
-.safari-adventure {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-        
-  text-align: center; 
- }
-.safari-adventure .p1{
-  width: 332px;
-  height: 84px;
-  background-color: #556b2f;
-  border-radius: 20px;
+.detail-1-p{
+  position: absolute;
+  top:500px;
+  left: 50px;
+
+  
+  
+}
+  
+
+.detail-1-p1{
+  font-size: 64px;
+  font-family: Instrument Suns;
+  font-weight: semi-bold;
+  width: 753px;
+  height: 234px;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ top: 50px;
+
+}
+
+
+.detail-1-p2{
   font-size: 40px;
+  font-family: Inter;
+  font-weight: semi-bold;
+  width: 678px;
+  height: 169px;
+  margin: 0;
+ padding: 0;
+
+}
+
+.detail-1-photo{
+  height: 961px;
+  font-weight: 1420px;
+}
+
+.detail-1-button{
+ background-color: #ff6b35;
+ width: 422px;
+ height: 96px;
+ border-radius: 40px;
+ font-size: 40PX;
+ position: absolute;
+ left: 1200px;
+ top:750px;
+ font-weight:SemiBold;
+ color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/*HERE IS THE DETAIL PAGE 2*/
+
+
+
+
+
+
+
+.detail-2-links{
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
-  margin-bottom: 20px;
-  margin-top: 80px;
-  
+  width: 1149px;
+  height: 51px;
+  justify-content: space-between;
+
 }
-.safari-adventure .safari-pt{
-  width: 358px;
-  height: 373px;
-  border-radius: 37px;
-  object-fit: cover;
-  
-}
-.safari-adventure .p2{
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 10px;
-  padding: 0;
-}
-.safari-adventure .p3{
-  font-size: 15px;
-  font-family: Inria Sans;
-  font-style: Italic;
-   margin-top: -30px;
-}
-
-
-
-
-
-
-
-
-
-.countryside {
+.detail-2-links a{
+  background-color: #ff6b35;
+  border-radius: 30px;
+  height: 51px;
+  width: 165px;
+  font-size: 24px;
+  font-family: Instrument Sans;
+  font-weight: SemiBold;
+  color: #ffffff;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-        
-  text-align: center; 
- }
-.countryside .p1{
-  width: 332px;
-  height: 84px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+
+}
+.detail-2-heading{
   background-color: #556b2f;
+  width: 583px;
+  height: 116px;
   border-radius: 20px;
-  font-size: 40px;
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: SemiBold;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
-  margin-bottom: 20px;
-  margin-top: 80px;
+  align-items: center;
+  color: #ffffff;
   
 }
-.countryside .shimul-pt{
-  width: 358px;
-  height: 373px;
-  border-radius: 37px;
-  object-fit: cover;
-  
+#detail-2-places
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
-.countryside .p2{
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 10px;
-  padding: 0;
+#detail-2-places .detail-2-photo
+{
+  width: 425px;
+  height: 482px;
+  border-radius: 30px;
+
+
 }
-.countryside .p3{
-  font-size: 15px;
-  font-family: Inria Sans;
-  font-style: Italic;
-   margin-top: -30px;
-}
+
+
+
