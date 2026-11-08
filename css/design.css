@@ -271,9 +271,7 @@ height: 289px;
   object-fit: cover;
   margin-left: -90px;
 }
-#detail-page2{
-  margin: 0 50px;
-}
+
 #detail-page2 h1
 {
   width: 487px;
@@ -337,12 +335,15 @@ height: 289px;
   margin-left:30px;
 
 }
+#detail-page2 .history h2
+{
+  position: relative;
+  left: 30px;
+}
 
 
 /*Detail page 3 starts here*/
-#detail-page3{
-  margin: 0 50px;
-}
+
 
 #detail-page3 .banner {
   width: 1340px;
@@ -354,7 +355,7 @@ height: 289px;
 #detail-page3 aside{
   margin-left:30px ;
   position: absolute;
-  top: 850px;
+  top: 1100px;
   left: 85px;
 }
 #detail-page3 aside h1{
@@ -404,6 +405,8 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  gap: 50px;
+  width: 100%;
 }
 #detail-page3 section img {
 width: 302px;
@@ -440,46 +443,102 @@ font-size: 40px;
 {
   width: 401px;
   height: 535px;
+  position: relative;
+  left: 165px;
 }
 #detail-page4 .photo2
 {
   width: 518px;
   height: 389px;
+  position: relative;
+  bottom: 74px;
+  left: 90px;
 }
 #detail-page4 .photo3
 {
   width: 365.25px;
   height: 487px;
+  position: relative;
+  left: 15px;
+  bottom:25px;
 }
 #detail-page4 .photo4
-{
-  width: 520.5px;
-  height:347px;
+{ 
+  width: 401px;
+  height: 266px;
+  position: relative;
+  left: 165px;
+  bottom: 90px;
+
 }
 #detail-page4 .photo5
 {
-  width: 366.5px;
-  height: 297px;
+   width: 520.5px;
+  height:347px;
+  position: relative;
+  left: 90px;
+  bottom: 200px;
 }
 #detail-page4 .photo6
 {
   width: 366.5px;
   height: 297px;
+  position: relative;
+  left: 15px;
+  bottom: 125px;
 }
 #detail-page4 .photo7
 {
-  width: 410px;
-  height: 247px;
+  width: 407px;
+  height: 265px;
+   position: relative;
+  left: 166px;
+  bottom: 217px;
 }
 #detail-page4 .photo8
 {
-  width: 500px;
+  width: 510px;
   height: 333px;
+   position: relative;
+  left: 90px;
+  bottom: 250px;
 }
 #detail-page4 .photo9
 {
   width: 374.5px;
   height: 281px;
+  position: relative;
+  left: 15px;
+  bottom: 225px;
+}
+
+#detail-page4 .first-row
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#detail-page4 .second-row
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#detail-page4 .third-row
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+figcaption img 
+{
+  position: relative;
+  left: 400px;
+  bottom: 400px;
 }
 
 /*contact page starts here*/
