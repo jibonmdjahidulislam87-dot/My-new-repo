@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact page</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image" href="img/bangladesh flag.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="contact-page">
 
 
    <header class="nav-bar">
     <a href="homepage.html">
-      <img src="comphany logo.jpg" alt="company logo" title="company logo" >
+      <img src="img/comphany logo.jpg" alt="company logo" title="company logo" >
     </a>
     <nav>
     <ul>
@@ -37,6 +38,9 @@
   </section>
   
   <section class="label">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact Form</legend>
   <p>
     <label for="name">Full Name</label> </br>
     <input type="text" id="Name" name="fullname" placeholder="e.g. Jahidul islam" required>
@@ -49,32 +53,37 @@
 
   <p>
     <label for="subject">Subject</label></br>
-    <input type="subject" id="subject" name="Subject" placeholder="Write the subject" required>
+    <input type="text" id="subject" name="Subject" placeholder="Write the subject">
   </p>
 
 
    <p>
     <label for="Message">Message</label></br>
-    <input type="Message" id="Message" name="Message" placeholder="Write your message here....." required>
+     <textarea id="Message" name="Message" placeholder="Write your message here....." required></textarea>
   </p>
 
-  <button>Submit</button>
+   <input type="submit" value="submit">
+   </fieldset>
+  </form>
   </section>
 
   <aside>
     <h3>Contact us</h3>
-    <article>
-      <img src="" alt="">
+    <article class="phone-number">
     <p>Phone number</p>
     <p>+31685306189</p>
     </article>
 
 
-    <article>
-      <img src="" alt="">
+    <article class="email">
     <p>Email adress</p>
-    <p>jibonmdjahidulislam87@gmail.com</p>
+    <p>jibon@gmail.com</p>
     </article>
   </aside>
+
+  <footer class="contact-footer">
+    <p>&copy; 2026 Bangladesh Travel Guide. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

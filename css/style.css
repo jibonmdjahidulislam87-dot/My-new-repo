@@ -1,7 +1,4 @@
-body
-{
-  margin: 0 50px 0 50px;
-}
+
  
  
   .nav-bar img{
@@ -9,6 +6,9 @@ body
   height: 214px;
   object-fit: cover;
   margin-left: -90px;
+}
+ul > li {
+    list-style-type: none;
 }
 .nav-bar {
   height: 214 px;
@@ -20,13 +20,17 @@ body
   
 
 }
+ul > li
+{
+  list-style: none;
+}
 
 .nav-bar ul{
-  list-style: none;
+
   display: flex;
 justify-content: space-between;
 gap: 85px;
-font-size: 20px;
+font-size: 15px;
 width: 141px;
 height: 24px;
 white-space: nowrap;
@@ -43,10 +47,13 @@ text-decoration: none;
 {
   color:#16161699;
 }
+.nav-bar a:active
+{
+ color: #ff0000;
+}
 
 #home-page .section-one img{
-  max-width: 650px;
-  width: 100%;
+  width: 600px;
   height: auto;
   border-radius: 20px;
 }
@@ -61,13 +68,13 @@ gap: 30px;
 #home-page .section-one  h1{
   font-size: 36px;
   font-weight: Bold;
-  width: 560px;
+  width: 500px;
   height: 86px;
   text-align: center;
   margin-top: 125px;
 }
 #home-page .section-one p{
-  max-width: 589px;
+  max-width: 500px;
   height: 72px;
   background-color: #556b2f;
   border-radius: 20px;
@@ -147,6 +154,9 @@ right: 25px;
   font-size: 35px;
   color: #ffffff;
   margin-left: 20px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  text-transform: capitalize;
 }
 #home-page .p2{
   font-size: 32px;
@@ -161,6 +171,16 @@ right: 25px;
   margin-top: 0;
   text-align: center;
 }
+footer
+{
+  position: relative;
+  top: 50px;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+
+}
+
 
 
 
@@ -175,8 +195,10 @@ right: 25px;
 
 #detail-page1 img
 {
-  width: 1329px;
-  height: 746px;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 #detail-page1 aside{
   position: relative;
@@ -184,12 +206,15 @@ right: 25px;
   left: 82px;
  
 }
+#detail-page1 h1,h2{
+  font-size: 48px;
+}
 #detail-page1 aside h1{
-  font-size: 40px;
   font-weight: Semi-Bold;
   font-family: Instruments-Sans;
   width: 617px;
   height: 98px;
+  word-spacing: 5px;
 }
 
 #detail-page1 aside p{
@@ -199,6 +224,7 @@ right: 25px;
   font-family: inter;
   font-weight:Semi-Bold;
   margin-top: 0;
+  word-spacing: 10px;
 }
 #detail-page1 .headings{
   display: flex;
@@ -207,6 +233,7 @@ right: 25px;
   flex-direction: column;
   text-align: center;
   margin-top: -250px;
+  margin-bottom: 20px;
 }
 #detail-page1 .seasons{
   display: flex;
@@ -218,7 +245,6 @@ right: 25px;
 {
   width: 622px;
   height: 119px;
-  font-size: 48px;
   font-weight: Semi-Bold;
   background-color: #556b2f;
   border-radius: 30px;
@@ -243,21 +269,55 @@ right: 25px;
   gap: 0;
   margin: 0;
 }
-#detail-page1 .heading {
+#detail-page1 strong {
   font-size: 48px;
-  font-weight: Bold;
-
 }
 #detail-page1 .seasons p {
   font-size: 32px;
 width: 1205px;
 height: 289px;
+letter-spacing: 0%;
+line-height: 50px;
+text-indent: 20px;
+word-spacing: 10px;
 }
+
+#detail-page1 .seasons p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #55c160;
+}
+
 #detail-page1 .orange{
   color: #F3B020;
 }
 #detail-page1 .red{
   color: red;
+}
+
+
+.weather-table {
+    width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weather-table td {
+    padding: 20px 25px;
+    border: 2px solid #ccc;
+}
+
+.weather-table tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+.weather-table tr:nth-child(odd) {
+    background-color: #FFF;
 }
 
 
@@ -295,7 +355,7 @@ height: 289px;
   gap: 40px;
 }
 #detail-page2 img{
-  width: 400px;
+  width: 380px;
   height: 482px;
   border-radius: 30px;
   object-fit:cover;
@@ -326,7 +386,7 @@ height: 289px;
 #detail-page2 .next-places p{
     width: 350px;
   height: 78px;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: Instrument-Sans;
   font-weight: Semi-bold;
   color: #ffffff;
@@ -346,7 +406,7 @@ height: 289px;
 
 
 #detail-page3 .banner {
-  width: 1340px;
+  width: 1200px;
   height: 1216px;
   position: relative;
   right: 35px;
@@ -398,6 +458,14 @@ font-weight: Medium;
 font-size: 36px;
 display: flex;
 justify-content: center;
+align-items: center;
+background-color: #556b2f;
+border-radius: 20px;
+height: 70px;
+width: 800px;
+color: #ffffff;
+margin: 0 auto;
+
 }
 
 #detail-page3 section {
@@ -409,9 +477,13 @@ justify-content: center;
   width: 100%;
 }
 #detail-page3 section img {
+border-width: 5px;
+border-color: #556b2f;
+border-style:solid; 
 width: 302px;
 height: 403px;
-border-radius: 30px;
+border-radius: 2rem;
+
 }
 #detail-page3 .board {
   display: flex;
@@ -419,11 +491,12 @@ border-radius: 30px;
   align-items: center;
   width: 660px;
   height: 403px;
-  gap: 32px;
+  gap: 2rem;
 }
 #detail-page3 section p{
 font-weight: Regular;
 font-size: 36px;
+
 }
 #detail-page3 span{
 font-weight: SemiBold;
@@ -431,20 +504,15 @@ font-size: 40px;
 }
 
 /* detail page 4 starts here*/
-#detail-page4 .insta-logo
-{
-  width: 16px;
-  height: 16px;
-  position: relative;
-  mix-blend-mode: multiply;
+#detail-page4 h1{
+font-size: 96px;
 }
-
 #detail-page4 .photo1 
 {
   width: 401px;
   height: 535px;
   position: relative;
-  left: 165px;
+  left: 125px;
 }
 #detail-page4 .photo2
 {
@@ -452,14 +520,14 @@ font-size: 40px;
   height: 389px;
   position: relative;
   bottom: 74px;
-  left: 90px;
+  left: 55px;
 }
 #detail-page4 .photo3
 {
   width: 365.25px;
   height: 487px;
   position: relative;
-  left: 15px;
+  left: -20px;
   bottom:25px;
 }
 #detail-page4 .photo4
@@ -467,8 +535,8 @@ font-size: 40px;
   width: 401px;
   height: 266px;
   position: relative;
-  left: 165px;
-  bottom: 90px;
+  left: 125px;
+  bottom: 72px;
 
 }
 #detail-page4 .photo5
@@ -476,40 +544,40 @@ font-size: 40px;
    width: 520.5px;
   height:347px;
   position: relative;
-  left: 90px;
-  bottom: 200px;
+  left: 55px;
+  bottom: 180px;
 }
 #detail-page4 .photo6
 {
   width: 366.5px;
   height: 297px;
   position: relative;
-  left: 15px;
-  bottom: 125px;
+  left: -20px;
+  bottom: 107px;
 }
 #detail-page4 .photo7
 {
   width: 407px;
   height: 265px;
    position: relative;
-  left: 166px;
-  bottom: 217px;
+  left: 127px;
+  bottom: 180px;
 }
 #detail-page4 .photo8
 {
   width: 510px;
   height: 333px;
    position: relative;
-  left: 90px;
-  bottom: 250px;
+  left: 55px;
+  bottom: 213px;
 }
 #detail-page4 .photo9
 {
   width: 374.5px;
   height: 281px;
   position: relative;
-  left: 15px;
-  bottom: 225px;
+  left: -20px;
+  bottom: 188px;
 }
 
 #detail-page4 .first-row
@@ -534,18 +602,8 @@ font-size: 40px;
   gap: 0;
 }
 
-figcaption img 
-{
-  position: relative;
-  left: 400px;
-  bottom: 400px;
-}
-
 /*contact page starts here*/
-#contact-page 
-{
-  margin: 0 50px;
-}
+
 #contact-page .heading
 {
   text-align: center;
@@ -562,6 +620,7 @@ margin-bottom: 0  ;
 #contact-page .heading p 
 {
   font-size: 40px;
+  width: 1200PX;
 }
 
 
@@ -618,9 +677,32 @@ font-size: 18px;
 #contact-page aside
 {
   position: relative;
-  left: 250PX;
+  left: 150PX;
+  bottom: 200px;
+  display: flex;
+  gap:100px;
+  flex-direction: column;
 }
 #contact-page h3{
   font-size: 64px;
+  margin-bottom: -50px;
 
 }
+
+.contact-footer
+{
+  float: right;
+}
+.phone-number p
+{
+  font-size: 48px;
+  margin: 5px;
+}
+.email p{
+   font-size: 48px;
+  margin: 5px;
+}
+
+
+
+
